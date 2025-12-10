@@ -1,0 +1,98 @@
+<!Doctype html>
+<html>
+<title>animation.com</title>
+    <head>
+        <style type="text/css">
+            body{
+                background-color: black;
+            }
+            @keyframes running{
+                1%{
+                    top: 0px;
+                    left: 0px;
+                   
+                    }
+                10%{
+                    top: 600px;
+                    left: 625px;
+                     background-color: darkviolet;
+                    color: aliceblue;
+                    }
+                20%{
+                    top: 0px;
+                    left: 1250px;
+                     background-color: blue;
+                    color: aliceblue;
+                    }
+                30%{
+                    top: 600px;
+                    left: 1250px;
+                     background-color: red;
+                    }
+                40{
+                    top: 0px;
+                    left: 1250px;
+                     background-color: green;
+                    color: yellow;
+                    }
+                50%{
+                    top: 0px;
+                    left: 625px;
+                     background-color: yellow;
+                    color:red;
+                    }
+                60%{
+                    top: 600px;
+                    left: 0px;
+                     background-color: white;
+                    color: red;
+                    }
+                70%{
+                    top: 0px;
+                    left: 0px;
+                     background-color: teal;
+                    color: azure;
+                    }
+                80%{
+                    top: 0px;
+                    left: 1250px;
+                     background-color: gold;
+                    color: black;
+                    }
+                90%{
+                    top: 600px;
+                    left: 1250px;
+                     background-color: fuchsia;
+                    color: azure;
+                    }
+                100%{
+                    top: 0px;
+                    left: 0px;
+                     background-color: red;
+                    }
+            }
+                div{
+                    animation-name: running;
+                    animation-duration: 10s;
+                    animation-play-state: running;
+                    animation-timing-function: ease-in-out;
+                    animation-iteration-count: infinite;
+                    animation-delay: 1s;
+                    padding: 10px;
+                    justify-content: center;
+                    position: relative;
+                 width: 200px;
+                    height: 200px;
+                    background-color: red;
+                    font-size: 40px;
+                    box-shadow: -5px 4px 3px white;
+                    
+                }
+                
+                
+        </style>
+    </head>
+    <body>
+    <div class="running"><b>check your internet connection!</b></div>
+    </body>
+</html>
