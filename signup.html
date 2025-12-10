@@ -1,0 +1,90 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+<title>MarvelusGallery.com</title>
+<link rel="stylesheet" href="web.css">
+    <style type="text/css">
+        #advert{
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+        }  
+        input:valid{
+            border-color:green;
+        }
+        input:invalid{
+            border-color: red;
+        }
+        input:invalid> small{
+            visibility: visible;
+        }
+        }
+    </style>
+    
+</head>
+
+
+<body>
+
+<nav class="navbar">
+
+<ul class="nav-list">
+
+<li><a href="web.html">Home</a></li>
+
+<li><a href="about.html">About Us</a></li>
+
+<li><a href="services.html">Services</a></li>
+
+<li><a href="contacts.html">Contact</a></li>
+    <li><a href="signin.html">Sign in</a></li>
+
+</ul>
+
+<div class="rightNav">
+
+<input type="text" name="search"
+
+id="search" placeholder="Search">
+
+<button class="btn btn-sm">Search</button>
+
+</div>
+
+</nav>
+    
+    <main>
+        <marquee id="roll">Thanks for staying tuned to MARVELUS Gallery...| To contact us on arts you want to see, contact us on... 09116769934 OR 09116213509| You can also chat us on whatsapp... 09116769934</marquee>
+        <br>
+        <img src="https://i.postimg.cc/7hwSBtp0/Lumii-20240226-235235954.jpg" id="advert">
+            <h1 style="color: darkblue; text-align: center; font-size: 50px"><b>MARVELUS GALLERY</b></h1>
+        <h2 style="text-align: center; font-size: 35px"><b><u>BECOME A MEMBER</u></b></h2>
+        <br>
+        <form action="signin.html">
+        <div class="form">
+            <h1 style="text-align: center; text-shadow: 5px 4px 3px blue"><b>SIGN UP</b></h1>
+            <p>Username:<input type="text" name="username" class="you" placeholder="Username" id="Username" maxlenght="16" required></p>
+            <small> This field is required!</small>
+                <p>E-mail:<input type="email" name="email" class="you" placeholder="E-mail" id="E-mail" required></p>
+            <small> This field is required!</small>
+                    <p>Password:<input type="password" name="password" class="you"placeholder="password" id="Password" min="6" max="16" required></p>
+            <small> This field is required!</small>
+            <p>Confirm Password:<input type="password" name="password" class="you"placeholder="password" id="Password2"required></p>
+            <small> This field is required!</small>
+            <br>
+            <input type="checkbox" name="checkbox" id="check"><label for="check">By Signing up, You agree to our <a href="privacypolicy.html" style="color: orange" required>PRIVACY POLICY</a></label>
+            <br>
+            <small id="red" style="color: red; visibility: hidden"> This field is required!</small>
+            <br>
+            <a href="signin.html" id="member" style="color: orange"><b> Already a member, Sign IN!</b></a>
+           <br>
+            <br>
+            <button type="submit" class="btn-submit" onclick="alert(sign up sucessful);">Sign UP</button>
+        </div>
+            </form>
+    </main>
+    <script src="web.js"></script>
+    </body>
+</html>
